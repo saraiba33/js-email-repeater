@@ -1,11 +1,12 @@
 const button = document.querySelector("button")
+const ouptut = document.querySelector("#email-ouput")
 
 
 function getOutputValue() {
-    const inputVal = document.querySelector("#email-input").value;
-    document.querySelector("#email-output").textContent = inputVal
+    const inputValue = document.querySelector("#email-input").value;
+    document.querySelector("#email-output").textContent = inputValue
 }
 
-button.addEventListener("click", event => {
-    return getInputValue()
+button.addEventListener("click", () => {
+    ouptut.textContent = getOutputValue()
 })
